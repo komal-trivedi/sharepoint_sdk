@@ -31,7 +31,6 @@ public class ServiceFactory {
 
 	static {
 		httpClient.addInterceptor(new Interceptor() {
-			@Override
 			public Response intercept(Chain chain) throws IOException {
 				Request original = chain.request();
 				AccessTokenHolder tokenHolder = AccessTokenHolder.getInstance();
